@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+:root {
+    --brand: #ff4d29;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+html,body {
+   
+    line-height: 1.15;
+    width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 0px;
+      overflow-x: hidden;
+      font-family: "Barlow", sans-serif;
+      color: var(--body); }
+
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+a {
+    color: var(--dark);
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-brand {
+    color: var(--brand) !important;
+}
+
+
+
+
+
+/* navbar */
+.top-nav {
+    background-color:#efefef;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 70px;
+    width: 100%;
+    height: 60px;
+ 
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+    vertical-align: middle;
+}
+
+.navbar {
+    background-color:#efefef;
+    height: 140px;
+    width: 1920px;
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 14px 16px;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+    font-size: 20px;
+    padding: 14px 15px;
+    font-weight: 600;
+   
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color:#006633;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color:#54008B;
+    text-decoration: underline;
+    font-weight: bold;
+  
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+
+    
+  }
+
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+
+.btn {
+    padding: 8px 26px;
+}
+
+.btn-brand {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #d64022;
+    border-color: #d64022;
+    color: #fff;
+}
+
+
+.intro {margin-bottom: 10px;
+text-align: center;}
+
+.intro p {
+    max-width: 500px;
+}
+.intro h6{
+    color: var(--brand);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    align-items: center;
+    display: flex;
+}
+
+.info-box img {
+    width: 90px;
+}
+/*1st banner*/
+.banner-box{
+    background-color: #4c4a4a;
+    height: 70px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 5%;
+    position: relative;
+    margin-top: -100px;
+    text-align: right;
+    left:75%;
+   }
+   .wallclock{
+       background-image: url('../img/wallclock.png');
+       height: 100px;
+       width: 100px;
+       position: absolute;
+       left: 30%;
+       bottom:-16%;
+       text-align:justify;
+   }
+   .banner-box1{
+       position: absolute;
+       width:80px;
+       height: 50px;
+       background-image: url('../img/rolex-logo.png');
+       text-align: center;
+       top:8%;
+ 
+      
+       }
+
+/*icons*/
+#milestone {
+  background-color:#efefef;
+  width: 1920px;
+  height: 140px;
+  margin-top: -70px;
+}
+
+#milestone h1{
+    color: #595758;
+    margin-top: -30px;
+}
+.icons-img{
+    margin-top: -70px;
+    display: inline-block;
+    display: flex;
+    text-align: center;
+    margin-right: 90px;
+    position: relative;
+    }
+.icons-img:hover{
+    fill: #54008B;
+    cursor: pointer;
+   
+}
+/*video*/
+.box{
+    width:1920px;
+    height: 768px;
+    margin-top: -70px;
+}
+.arrow{
+    width:512px;
+    height: 512px;
+    text-align: center;
+    background:  url('../img/arrow.png');
+}
+
+/*center im*/
+
+.latest{
+
+    display: flex;
+    width: 1400px;
+    height: 933px;
+    background-image: url('../img/banner-2.jpg');
+    
+    }
+
+.service {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.service h5 {
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+/*quick updates*/
+
+@media (max-width: 576px) {
+    .center-text {
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+    }
+  }
+  .text{
+      text-transform: lowercase;
+      font-family: poppins;
+      color:#4c4a4a;
+      font-weight:300;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      line-height: 2;
+      
+
+  }
+  /* 2nd im gallery*/
+
+  .gallery-text{
+
+    text-transform: lowercase;
+    font-family: poppins;
+    color:#4c4a4a;
+    font-weight:300;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+
+  }
+
+
+
+  .full-width-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;  
+    margin-left: -50vw;
+  }
+  
+  .full-width-image img {
+    width: 100%;
+  }
+
+ /* 3rd  im gallery*/
+
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+ 
